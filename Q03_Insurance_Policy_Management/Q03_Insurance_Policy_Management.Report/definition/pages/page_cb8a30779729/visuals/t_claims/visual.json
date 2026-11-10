@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "t_claims",
+  "position": {
+    "x": 640,
+    "y": 420,
+    "z": 8,
+    "height": 270,
+    "width": 620,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "PolicyID"
+                }
+              },
+              "queryRef": "Insurance.PolicyID",
+              "nativeQueryRef": "PolicyID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "CustomerName"
+                }
+              },
+              "queryRef": "Insurance.CustomerName",
+              "nativeQueryRef": "CustomerName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "PolicyType"
+                }
+              },
+              "queryRef": "Insurance.PolicyType",
+              "nativeQueryRef": "PolicyType"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "AnnualPremium"
+                }
+              },
+              "queryRef": "Insurance.AnnualPremium",
+              "nativeQueryRef": "AnnualPremium"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "ClaimAmount"
+                }
+              },
+              "queryRef": "Insurance.ClaimAmount",
+              "nativeQueryRef": "ClaimAmount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "ClaimStatus"
+                }
+              },
+              "queryRef": "Insurance.ClaimStatus",
+              "nativeQueryRef": "ClaimStatus"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+StudentID,StudentName,CourseName,FacultyName,Marks,Grade
+3001,Student 1,Data Science,Dr. Alan,93.0,A
+3002,Student 2,Data Science,Dr. Alan,72.0,B
+3003,Student 3,Cloud Computing,Prof. Grace,40.0,F
+3004,Student 4,Cloud Computing,Prof. Grace,40.0,F
+3005,Student 5,AI & ML,Dr. Turing,74.0,B
+3006,Student 6,Cyber Security,Dr. Hopper,85.0,A
+3007,Student 7,Cyber Security,Dr. Hopper,95.0,A
+3008,Student 8,AI & ML,Dr. Turing,39.0,F
+3009,Student 9,Cloud Computing,Prof. Grace,71.0,B
+3010,Student 10,AI & ML,Dr. Turing,41.0,F
+3011,Student 11,AI & ML,Dr. Turing,69.0,C
+3012,Student 12,Data Science,Dr. Alan,82.0,B
+3013,Student 13,Database Systems,Prof. Knuth,86.0,A
+3014,Student 14,Database Systems,Prof. Knuth,84.0,B
+3015,Student 15,AI & ML,Dr. Turing,58.0,C
+3016,Student 16,Database Systems,Prof. Knuth,98.0,A
+3017,Student 17,AI & ML,Dr. Turing,69.0,C
+3018,Student 18,Data Science,Dr. Alan,89.0,A
+3019,Student 19,Data Science,Dr. Alan,90.0,A
+3020,Student 20,Cyber Security,Dr. Hopper,58.0,C
+3021,Student 21,Cyber Security,Dr. Hopper,72.0,B
+3022,Student 22,AI & ML,Dr. Turing,48.0,F
+3023,Student 23,Data Science,Dr. Alan,76.0,B
+3024,Student 24,AI & ML,Dr. Turing,74.0,B
+3025,Student 25,Database Systems,Prof. Knuth,89.0,A
+3026,Student 26,Cloud Computing,Prof. Grace,91.0,A
+3027,Student 27,AI & ML,Dr. Turing,92.0,A
+3028,Student 28,Data Science,Dr. Alan,80.0,B
+3029,Student 29,Cyber Security,Dr. Hopper,90.0,A
+3030,Student 30,AI & ML,Dr. Turing,42.0,F
+3031,Student 31,Data Science,Dr. Alan,86.0,A
+3032,Student 32,AI & ML,Dr. Turing,55.0,C
+3033,Student 33,Data Science,Dr. Alan,53.0,C
+3034,Student 34,Cyber Security,Dr. Hopper,91.0,A
+3035,Student 35,Data Science,Dr. Alan,51.0,C
+3036,Student 36,Data Science,Dr. Alan,65.0,C
+3037,Student 37,AI & ML,Dr. Turing,81.0,B
+3038,Student 38,Database Systems,Prof. Knuth,39.0,F
+3039,Student 39,Cyber Security,Dr. Hopper,54.0,C
+3040,Student 40,Database Systems,Prof. Knuth,82.0,B
+3041,Student 41,AI & ML,Dr. Turing,91.0,A
+3042,Student 42,Data Science,Dr. Alan,52.0,C
+3043,Student 43,Cyber Security,Dr. Hopper,81.0,B
+3044,Student 44,Database Systems,Prof. Knuth,75.0,B
+3045,Student 45,AI & ML,Dr. Turing,66.0,C
+3046,Student 46,Data Science,Dr. Alan,38.0,F
+3047,Student 47,Cloud Computing,Prof. Grace,98.0,A
+3048,Student 48,Cyber Security,Dr. Hopper,84.0,B
+3049,Student 49,Cyber Security,Dr. Hopper,50.0,C
+3050,Student 50,AI & ML,Dr. Turing,68.0,C
+3051,Student 51,Database Systems,Prof. Knuth,62.0,C
+3052,Student 52,Cyber Security,Dr. Hopper,71.0,B
+3053,Student 53,Database Systems,Prof. Knuth,60.0,C
+3054,Student 54,Data Science,Dr. Alan,52.0,C
+3055,Student 55,Data Science,Dr. Alan,92.0,A
+3056,Student 56,Cloud Computing,Prof. Grace,91.0,A
+3057,Student 57,Data Science,Dr. Alan,75.0,B
+3058,Student 58,AI & ML,Dr. Turing,43.0,F
+3059,Student 59,Cyber Security,Dr. Hopper,72.0,B
+3060,Student 60,AI & ML,Dr. Turing,55.0,C
+3061,Student 61,Cloud Computing,Prof. Grace,81.0,B
+3062,Student 62,Cyber Security,Dr. Hopper,63.0,C
+3063,Student 63,Data Science,Dr. Alan,60.0,C
+3064,Student 64,Cloud Computing,Prof. Grace,65.0,C
+3065,Student 65,Database Systems,Prof. Knuth,38.0,F
+3066,Student 66,AI & ML,Dr. Turing,82.0,B
+3067,Student 67,Database Systems,Prof. Knuth,51.0,C
+3068,Student 68,Cyber Security,Dr. Hopper,46.0,F
+3069,Student 69,Data Science,Dr. Alan,74.0,B
+3070,Student 70,Database Systems,Prof. Knuth,96.0,A
+3071,Student 71,Cyber Security,Dr. Hopper,87.0,A
+3072,Student 72,Database Systems,Prof. Knuth,44.0,F
+3073,Student 73,Cloud Computing,Prof. Grace,75.0,B
+3074,Student 74,Data Science,Dr. Alan,92.0,A
+3075,Student 75,Database Systems,Prof. Knuth,79.0,B
+3076,Student 76,Cloud Computing,Prof. Grace,58.0,C
+3077,Student 77,Cloud Computing,Prof. Grace,90.0,A
+3078,Student 78,Cyber Security,Dr. Hopper,42.0,F
+3079,Student 79,Data Science,Dr. Alan,54.0,C
+3080,Student 80,AI & ML,Dr. Turing,56.0,C
+3081,Student 81,Cloud Computing,Prof. Grace,76.0,B
+3082,Student 82,Cloud Computing,Prof. Grace,79.0,B
+3083,Student 83,Cyber Security,Dr. Hopper,71.0,B
+3084,Student 84,Data Science,Dr. Alan,67.0,C
+3085,Student 85,Cloud Computing,Prof. Grace,70.0,B
+3086,Student 86,Cloud Computing,Prof. Grace,73.0,B
+3087,Student 87,Cyber Security,Dr. Hopper,46.0,F
+3088,Student 88,Cyber Security,Dr. Hopper,56.0,C
+3089,Student 89,Cyber Security,Dr. Hopper,54.0,C
+3090,Student 90,Cloud Computing,Prof. Grace,78.0,B
+3091,Student 91,Cyber Security,Dr. Hopper,40.0,F
+3092,Student 92,Data Science,Dr. Alan,45.0,F
+3093,Student 93,Data Science,Dr. Alan,68.0,C
+3094,Student 94,Cloud Computing,Prof. Grace,88.0,A
+3095,Student 95,Cyber Security,Dr. Hopper,38.0,F
+3096,Student 96,Database Systems,Prof. Knuth,72.0,B
+3097,Student 97,AI & ML,Dr. Turing,96.0,A
+3098,Student 98,Cloud Computing,Prof. Grace,86.0,A
+3099,Student 99,AI & ML,Dr. Turing,93.0,A
+3100,Student 100,Data Science,Dr. Alan,42.0,F
+3101,Student 101,Cloud Computing,Prof. Grace,91.0,A
+3102,Student 102,Database Systems,Prof. Knuth,96.0,A
+3103,Student 103,Database Systems,Prof. Knuth,61.0,C
+3104,Student 104,AI & ML,Dr. Turing,53.0,C
+3105,Student 105,AI & ML,Dr. Turing,75.0,B
+3106,Student 106,AI & ML,Dr. Turing,86.0,A
+3107,Student 107,Cloud Computing,Prof. Grace,82.0,B
+3108,Student 108,Cyber Security,Dr. Hopper,48.0,F
+3109,Student 109,AI & ML,Dr. Turing,65.0,C
+3110,Student 110,Database Systems,Prof. Knuth,50.0,C
+3111,Student 111,AI & ML,Dr. Turing,92.0,A
+3112,Student 112,Cloud Computing,Prof. Grace,53.0,C
+3113,Student 113,Data Science,Dr. Alan,41.0,F
+3114,Student 114,AI & ML,Dr. Turing,84.0,B
+3115,Student 115,Cyber Security,Dr. Hopper,88.0,A
+3116,Student 116,Cloud Computing,Prof. Grace,55.0,C
+3117,Student 117,AI & ML,Dr. Turing,75.0,B
+3118,Student 118,Cloud Computing,Prof. Grace,55.0,C
+3119,Student 119,Database Systems,Prof. Knuth,94.0,A
+3120,Student 120,Database Systems,Prof. Knuth,74.0,B

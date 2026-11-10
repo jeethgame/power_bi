@@ -1,0 +1,121 @@
+AccountID,CustomerName,BranchName,Region,AccountType,Status,Balance
+1001,Customer 1,Delhi Central,North,Current,Dormant,63443.51
+1002,Customer 2,Bangalore Tech,South,Savings,Active,143172.55
+1003,Customer 3,Mumbai South,West,Fixed Deposit,Active,192890.03
+1004,Customer 4,Delhi Central,North,Savings,Active,195559.01
+1005,Customer 5,Anna Nagar,North,Savings,Active,146777.76
+1006,Customer 6,Delhi Central,North,Salary,Active,102180.34
+1007,Customer 7,Chennai Main,South,Current,Active,29965.82
+1008,Customer 8,Bangalore Tech,South,Savings,Active,200075.67
+1009,Customer 9,Anna Nagar,North,Salary,Active,167072.73
+1010,Customer 10,Delhi Central,North,Fixed Deposit,Dormant,8099.78
+1011,Customer 11,Mumbai South,West,Savings,Active,111213.23
+1012,Customer 12,Bangalore Tech,South,Salary,Dormant,178290.62
+1013,Customer 13,T Nagar,North,Fixed Deposit,Dormant,155898.53
+1014,Customer 14,Mumbai South,West,Salary,Active,207304.98
+1015,Customer 15,Anna Nagar,North,Current,Active,208529.1
+1016,Customer 16,Anna Nagar,North,Salary,Dormant,64746.54
+1017,Customer 17,Delhi Central,North,Salary,Dormant,87417.17
+1018,Customer 18,Anna Nagar,North,Current,Active,124449.73
+1019,Customer 19,Anna Nagar,North,Fixed Deposit,Active,73516.33
+1020,Customer 20,Delhi Central,North,Savings,Active,131573.68
+1021,Customer 21,Chennai Main,South,Current,Dormant,181418.29
+1022,Customer 22,Delhi Central,North,Current,Dormant,174199.29
+1023,Customer 23,Mumbai South,West,Savings,Active,27798.07
+1024,Customer 24,Mumbai South,West,Current,Active,80020.48
+1025,Customer 25,Mumbai South,West,Fixed Deposit,Active,109248.43
+1026,Customer 26,Anna Nagar,North,Salary,Active,71374.52
+1027,Customer 27,T Nagar,North,Savings,Active,181714.66
+1028,Customer 28,Chennai Main,South,Current,Dormant,51927.54
+1029,Customer 29,Anna Nagar,North,Fixed Deposit,Active,245225.1
+1030,Customer 30,Anna Nagar,North,Current,Active,93415.86
+1031,Customer 31,Chennai Main,South,Current,Active,72206.28
+1032,Customer 32,Delhi Central,North,Fixed Deposit,Active,175867.26
+1033,Customer 33,Bangalore Tech,South,Salary,Active,30133.97
+1034,Customer 34,Delhi Central,North,Fixed Deposit,Dormant,120002.25
+1035,Customer 35,Anna Nagar,North,Current,Active,241546.92
+1036,Customer 36,Mumbai South,West,Savings,Dormant,206418.33
+1037,Customer 37,Mumbai South,West,Savings,Active,146370.18
+1038,Customer 38,T Nagar,North,Current,Active,203729.81
+1039,Customer 39,Chennai Main,South,Current,Dormant,34020.63
+1040,Customer 40,Delhi Central,North,Current,Dormant,195044.92
+1041,Customer 41,Mumbai South,West,Salary,Dormant,77851.52
+1042,Customer 42,Anna Nagar,North,Savings,Active,154359.57
+1043,Customer 43,T Nagar,North,Current,Active,69838.3
+1044,Customer 44,T Nagar,North,Current,Active,47584.32
+1045,Customer 45,T Nagar,North,Savings,Dormant,105086.81
+1046,Customer 46,Anna Nagar,North,Savings,Active,61711.68
+1047,Customer 47,Bangalore Tech,South,Salary,Active,22439.04
+1048,Customer 48,Anna Nagar,North,Current,Active,109159.05
+1049,Customer 49,Bangalore Tech,South,Current,Active,227560.8
+1050,Customer 50,Chennai Main,South,Savings,Active,45651.08
+1051,Customer 51,Delhi Central,North,Fixed Deposit,Dormant,112592.59
+1052,Customer 52,Bangalore Tech,South,Fixed Deposit,Active,176434.75
+1053,Customer 53,Delhi Central,North,Salary,Active,112250.92
+1054,Customer 54,Mumbai South,West,Fixed Deposit,Active,152909.84
+1055,Customer 55,Chennai Main,South,Current,Active,240668.22
+1056,Customer 56,Bangalore Tech,South,Fixed Deposit,Active,146180.51
+1057,Customer 57,Mumbai South,West,Salary,Active,229437.83
+1058,Customer 58,Delhi Central,North,Salary,Dormant,160522.26
+1059,Customer 59,Chennai Main,South,Salary,Active,90250.46
+1060,Customer 60,Anna Nagar,North,Savings,Active,215144.61
+1061,Customer 61,Mumbai South,West,Salary,Dormant,75613.36
+1062,Customer 62,Delhi Central,North,Savings,Active,116432.35
+1063,Customer 63,Anna Nagar,North,Fixed Deposit,Dormant,33400.79
+1064,Customer 64,Delhi Central,North,Savings,Dormant,166126.79
+1065,Customer 65,Mumbai South,West,Savings,Active,50957.72
+1066,Customer 66,Delhi Central,North,Salary,Active,158225.14
+1067,Customer 67,T Nagar,North,Fixed Deposit,Active,139558.81
+1068,Customer 68,Mumbai South,West,Salary,Active,34749.39
+1069,Customer 69,Bangalore Tech,South,Current,Active,81133.78
+1070,Customer 70,Delhi Central,North,Salary,Active,27836.25
+1071,Customer 71,Mumbai South,West,Savings,Active,163688.87
+1072,Customer 72,Mumbai South,West,Fixed Deposit,Active,129673.64
+1073,Customer 73,Mumbai South,West,Salary,Active,245159.93
+1074,Customer 74,Mumbai South,West,Current,Active,98978.57
+1075,Customer 75,Chennai Main,South,Fixed Deposit,Dormant,194305.41
+1076,Customer 76,Anna Nagar,North,Fixed Deposit,Active,206034.62
+1077,Customer 77,Bangalore Tech,South,Fixed Deposit,Dormant,210181.6
+1078,Customer 78,T Nagar,North,Salary,Active,136952.24
+1079,Customer 79,Anna Nagar,North,Salary,Active,116559.43
+1080,Customer 80,T Nagar,North,Current,Active,145090.42
+1081,Customer 81,Mumbai South,West,Savings,Dormant,82953.2
+1082,Customer 82,Bangalore Tech,South,Salary,Active,99589.29
+1083,Customer 83,Mumbai South,West,Savings,Active,35930.34
+1084,Customer 84,Chennai Main,South,Salary,Dormant,29429.37
+1085,Customer 85,Chennai Main,South,Current,Active,105444.76
+1086,Customer 86,Chennai Main,South,Salary,Active,196473.7
+1087,Customer 87,Anna Nagar,North,Salary,Active,164209.98
+1088,Customer 88,Bangalore Tech,South,Salary,Dormant,238764.2
+1089,Customer 89,Delhi Central,North,Savings,Active,156277.57
+1090,Customer 90,Bangalore Tech,South,Fixed Deposit,Active,249369.35
+1091,Customer 91,Mumbai South,West,Savings,Active,191290.57
+1092,Customer 92,Mumbai South,West,Current,Active,175030.28
+1093,Customer 93,Chennai Main,South,Fixed Deposit,Active,200055.15
+1094,Customer 94,Anna Nagar,North,Fixed Deposit,Active,110518.26
+1095,Customer 95,Delhi Central,North,Salary,Active,143652.38
+1096,Customer 96,T Nagar,North,Current,Dormant,24347.25
+1097,Customer 97,Delhi Central,North,Current,Active,126928.48
+1098,Customer 98,T Nagar,North,Salary,Dormant,161286.63
+1099,Customer 99,Anna Nagar,North,Savings,Dormant,225232.59
+1100,Customer 100,Anna Nagar,North,Current,Active,23096.17
+1101,Customer 101,Delhi Central,North,Fixed Deposit,Dormant,161539.98
+1102,Customer 102,Bangalore Tech,South,Fixed Deposit,Active,116924.77
+1103,Customer 103,T Nagar,North,Salary,Active,214067.19
+1104,Customer 104,T Nagar,North,Salary,Active,145121.06
+1105,Customer 105,Bangalore Tech,South,Fixed Deposit,Dormant,10375.2
+1106,Customer 106,Anna Nagar,North,Savings,Active,143652.61
+1107,Customer 107,Delhi Central,North,Salary,Active,209045.53
+1108,Customer 108,T Nagar,North,Fixed Deposit,Active,58656.11
+1109,Customer 109,Delhi Central,North,Fixed Deposit,Active,171052.29
+1110,Customer 110,Bangalore Tech,South,Savings,Active,226333.91
+1111,Customer 111,Anna Nagar,North,Salary,Active,13174.31
+1112,Customer 112,Bangalore Tech,South,Current,Active,27082.68
+1113,Customer 113,Anna Nagar,North,Salary,Active,48031.82
+1114,Customer 114,Delhi Central,North,Fixed Deposit,Active,135058.83
+1115,Customer 115,T Nagar,North,Fixed Deposit,Dormant,228941.99
+1116,Customer 116,Anna Nagar,North,Fixed Deposit,Dormant,202036.97
+1117,Customer 117,Chennai Main,South,Current,Active,189767.12
+1118,Customer 118,Bangalore Tech,South,Salary,Active,241981.09
+1119,Customer 119,Chennai Main,South,Salary,Active,8410.07
+1120,Customer 120,Mumbai South,West,Fixed Deposit,Active,169842.95

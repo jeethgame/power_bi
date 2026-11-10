@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "d_status",
+  "position": {
+    "x": 20,
+    "y": 420,
+    "z": 7,
+    "height": 270,
+    "width": 600,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "ClaimStatus"
+                }
+              },
+              "queryRef": "Insurance.ClaimStatus",
+              "nativeQueryRef": "ClaimStatus"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "Total Claims"
+                }
+              },
+              "queryRef": "Insurance.Total Claims",
+              "nativeQueryRef": "Total Claims"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

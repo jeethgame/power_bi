@@ -1,0 +1,62 @@
+table University
+	lineageTag: 058e59cd-1937-4101-a672-197b2673be6a
+
+	column StudentID
+		dataType: int64
+		lineageTag: 920232f0-2d91-4b81-ba17-acdeae06f190
+		summarizeBy: none
+		sourceColumn: StudentID
+
+	column StudentName
+		dataType: string
+		lineageTag: 1c925805-8cd7-49fd-9565-0095eb387553
+		summarizeBy: none
+		sourceColumn: StudentName
+
+	column CourseName
+		dataType: string
+		lineageTag: 921c8b72-6bff-4db5-a3db-2c5109a09083
+		summarizeBy: none
+		sourceColumn: CourseName
+
+	column FacultyName
+		dataType: string
+		lineageTag: 683b1fec-1ae3-4cb0-b48b-0f067e190fc2
+		summarizeBy: none
+		sourceColumn: FacultyName
+
+	column Marks
+		dataType: double
+		lineageTag: 8502eac7-a464-4abd-afc6-b7d970e4078b
+		summarizeBy: average
+		sourceColumn: Marks
+
+	column Grade
+		dataType: string
+		lineageTag: 1e22f8bc-a12d-44fd-a8cf-e447dc099e81
+		summarizeBy: none
+		sourceColumn: Grade
+
+	measure 'Avg Marks' = AVERAGE(University[Marks])
+		lineageTag: 56ab74c1-2934-43e9-ac66-9eca529b26e8
+
+	measure 'Total Students' = COUNTROWS(University)
+		lineageTag: c882774a-f783-4dba-8361-72cb6ffd98fc
+
+	measure 'Pass Count' = CALCULATE(COUNTROWS(University), University[Marks] >= 50)
+		lineageTag: 6b3c7615-79bc-473b-8ad7-e845b1141fe5
+
+	measure 'Pass %' = DIVIDE([Pass Count], [Total Students])
+		lineageTag: 7b26afe6-1069-4bcd-9ffe-ba585f37fc64
+
+	partition University = m
+		mode: import
+		source =
+				let
+					Source = Json.Document(Binary.Decompress(Binary.FromText("nZlLb1w3DIX/yoUXXQWGqAclLR0HfaAtUMDdBVlMnGkTIBkb45mF/33vTDD1OVxIjHeWMaQk6ruHlPj+fQpB3ixXd4fjp+3usMjVOni3OWyWu/sv29399jzeXy83Xze79e+ersP6n5urD2+Wk20E2zixrfFs+/Zim8A2nX57+/Xh+Gm5ffj2eDx82f17+tdf+4d/rpdf9puztxzOHn6+eMjgIb/KQwEP5fTzm9+Wn5Y//7gs/e/j/rufmnnxCoZ6nvr543a/3G3vV4vD88X+14fHx+1+HbXCgatgXx323dg3sG+jhafOO+5g2F0xq0Jbl4C8hNHcWWhuIdJkZKnfV317sUTOZAZaY9AEQZN0Mf64edoud89Ph+23p5dN/747Hj6ffCjFWxA1yU4fzIwgbDKkrTTePtIm6pu9N94BEif1R4KPrEmbBb/ztMib9Jm8BDKOiFoMjs/EBC4icVEcDoxIRRK4OIS9EewRqYtpsvGqPC3iFvMPCFNEyGJxgspnFhG3qC6R6MIukLY4pK1HtkTa4pS2wLtH2mL36CoTl5C4NBa3SOedELU0y6NGXhJiloaYlUKEJ8qiM8xKYmPELGVPuPiYE9KWymx24dkRs6QTYzX7RsDSELDG+SshYOl/wMZfiMmiCTlLHs5KpuVn5CwH52fK2pSRuDxMp+bYMuKWZ+m0RF46EpeTp/bhA8hUtjlzaS3sA8HLw1yqystH6vKMusSinpG6XH3KyHk4I365ecLHCp+RvexiL1AECrJXhhqnnE4LElfEd3LK+BRkr0RPSmZ8CvJXnOWcmhAggiVPIDAfQKFLw0z0THoriF95VW4tCGGps8qCP5yC+JXhzSEnYr8gd8XDnamlFLnTIXcmySlyp+IKmhEdRezUg51yrlTETmeJ1vCmyJv6rqom4SlSp87CzsiX0q1Vh0nTnB0yp9U3u8n3iuipR/my8vKRQJ3dJUxhXJG+6sy4ncu0ihxWz3WiVXaAFNboW0TOFIWKIFbfw4kRgYo41pn8GQWrCGJ1glg7LwBBrD4VNFe7Si8ozlTMxX5FIKsLSK75KwJZZ0CaErAhkG0sh1zCNMSw+eTQXDAbgtiizwWfYUMOm6cONIm8IYVtRqFWjgFS2IpvA3xZbAhh80FYE7tACJvnHc9IWqN3PA+ClgVEsL3iJtIRwx58UWgUhY48do8smmfYjjT22X0kFzZGDvs0MbOKdGSw+xJz44K+I4m9OHZvsnJHDrvzdc/UVh1B7OP3Fs5pHQnszRcB44LelPtwcuofSOC35DA7eZJf4c5F8AkhF9NCHYx19Jq6QKiVsY58TpTKI6FuxjoaJoTEpvSyHMaNDCoFhBoZ62hYE5pd04ty8KVgriuF+hjryKMdjSGgB+YwpI9LauFOhjhrQr5Ni2lqjJ9hqJIS7mqILwubo+fmhszkjzsywm0NGTLHzxDC3Qzx6B4Lp3BXQ5xVoDlCYnDc1jDkc1tDfMpnpyf4XtobE/XIFAfqckh0YvhyvfnwHw==", BinaryEncoding.Base64), Compression.Deflate)),
+					Table = Table.FromRows(Source, {"StudentID", "StudentName", "CourseName", "FacultyName", "Marks", "Grade"}),
+					Typed = Table.TransformColumnTypes(Table, {{"StudentID", Int64.Type}, {"StudentName", type text}, {"CourseName", type text}, {"FacultyName", type text}, {"Marks", type number}, {"Grade", type text}}, "en-US")
+				in
+					Typed
+
+	annotation PBI_ResultType = Table

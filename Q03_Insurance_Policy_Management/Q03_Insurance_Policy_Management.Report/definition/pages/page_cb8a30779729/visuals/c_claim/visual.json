@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "c_claim",
+  "position": {
+    "x": 320,
+    "y": 20,
+    "z": 2,
+    "height": 100,
+    "width": 280,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "Total Claims"
+                }
+              },
+              "queryRef": "Insurance.Total Claims",
+              "nativeQueryRef": "Total Claims"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

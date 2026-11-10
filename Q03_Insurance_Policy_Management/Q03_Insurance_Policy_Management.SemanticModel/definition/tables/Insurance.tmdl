@@ -1,0 +1,62 @@
+table Insurance
+	lineageTag: 63136f10-8f41-4cd4-b434-c14960f66a3f
+
+	column PolicyID
+		dataType: int64
+		lineageTag: 63a3d5f9-2535-4194-a760-912703b86bff
+		summarizeBy: none
+		sourceColumn: PolicyID
+
+	column CustomerName
+		dataType: string
+		lineageTag: b527b87d-55ad-4cc4-8070-4dd708107e7e
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+	column PolicyType
+		dataType: string
+		lineageTag: 5fb44716-2393-4b1e-bdf3-695bedebe68e
+		summarizeBy: none
+		sourceColumn: PolicyType
+
+	column AnnualPremium
+		dataType: double
+		lineageTag: 89315566-cf51-45c1-a2c1-1a6bb049d731
+		summarizeBy: sum
+		sourceColumn: AnnualPremium
+
+	column ClaimAmount
+		dataType: double
+		lineageTag: 4a5a0b62-7ff8-4b16-8c8a-2b11506de10d
+		summarizeBy: sum
+		sourceColumn: ClaimAmount
+
+	column ClaimStatus
+		dataType: string
+		lineageTag: 3c490795-8dc4-47ae-b3a5-ed1a1e9af653
+		summarizeBy: none
+		sourceColumn: ClaimStatus
+
+	measure 'Total Premium' = SUM(Insurance[AnnualPremium])
+		lineageTag: 23dbb4be-03e9-4e81-9154-2f069719bfe6
+
+	measure 'Total Claims' = SUM(Insurance[ClaimAmount])
+		lineageTag: e492e38d-19cb-4cee-b231-01eaaa0f2084
+
+	measure 'Claim Ratio %' = DIVIDE([Total Claims], [Total Premium])
+		lineageTag: a2357b03-1189-4790-8b67-3fd227585eae
+
+	measure 'Total Policies' = COUNTROWS(Insurance)
+		lineageTag: 127b252c-1938-434c-82d1-3b4aa2ed6c4a
+
+	partition Insurance = m
+		mode: import
+		source =
+				let
+					Source = Json.Document(Binary.Decompress(Binary.FromText("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", BinaryEncoding.Base64), Compression.Deflate)),
+					Table = Table.FromRows(Source, {"PolicyID", "CustomerName", "PolicyType", "AnnualPremium", "ClaimAmount", "ClaimStatus"}),
+					Typed = Table.TransformColumnTypes(Table, {{"PolicyID", Int64.Type}, {"CustomerName", type text}, {"PolicyType", type text}, {"AnnualPremium", type number}, {"ClaimAmount", type number}, {"ClaimStatus", type text}}, "en-US")
+				in
+					Typed
+
+	annotation PBI_ResultType = Table

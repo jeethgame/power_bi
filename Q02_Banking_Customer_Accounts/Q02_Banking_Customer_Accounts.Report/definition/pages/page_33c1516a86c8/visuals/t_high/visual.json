@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "t_high",
+  "position": {
+    "x": 640,
+    "y": 420,
+    "z": 8,
+    "height": 270,
+    "width": 620,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Banking"
+                    }
+                  },
+                  "Property": "AccountID"
+                }
+              },
+              "queryRef": "Banking.AccountID",
+              "nativeQueryRef": "AccountID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Banking"
+                    }
+                  },
+                  "Property": "CustomerName"
+                }
+              },
+              "queryRef": "Banking.CustomerName",
+              "nativeQueryRef": "CustomerName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Banking"
+                    }
+                  },
+                  "Property": "BranchName"
+                }
+              },
+              "queryRef": "Banking.BranchName",
+              "nativeQueryRef": "BranchName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Banking"
+                    }
+                  },
+                  "Property": "AccountType"
+                }
+              },
+              "queryRef": "Banking.AccountType",
+              "nativeQueryRef": "AccountType"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Banking"
+                    }
+                  },
+                  "Property": "Balance"
+                }
+              },
+              "queryRef": "Banking.Balance",
+              "nativeQueryRef": "Balance"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

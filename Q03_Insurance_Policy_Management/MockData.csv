@@ -1,0 +1,121 @@
+PolicyID,CustomerName,PolicyType,AnnualPremium,ClaimAmount,ClaimStatus
+2001,Insured 1,Home,42008.78,8667.69,Approved
+2002,Insured 2,Home,6126.11,44912.59,Rejected
+2003,Insured 3,Motor,34144.36,37141.4,Rejected
+2004,Insured 4,Life,34215.78,0.0,No Claim
+2005,Insured 5,Health,47581.77,39409.97,Approved
+2006,Insured 6,Motor,44926.67,0.0,No Claim
+2007,Insured 7,Home,21695.52,55718.72,Rejected
+2008,Insured 8,Home,31430.32,70833.1,Rejected
+2009,Insured 9,Health,42516.19,75124.25,Pending
+2010,Insured 10,Health,36062.63,0.0,No Claim
+2011,Insured 11,Home,47774.98,7948.37,Rejected
+2012,Insured 12,Life,29500.96,28693.91,Pending
+2013,Insured 13,Life,13541.39,0.0,No Claim
+2014,Insured 14,Home,9125.3,0.0,No Claim
+2015,Insured 15,Health,7276.03,79105.67,Rejected
+2016,Insured 16,Motor,8087.46,16572.59,Approved
+2017,Insured 17,Motor,19785.18,0.0,No Claim
+2018,Insured 18,Health,17477.37,79002.18,Rejected
+2019,Insured 19,Life,40933.12,0.0,No Claim
+2020,Insured 20,Health,10931.15,63074.52,Rejected
+2021,Insured 21,Life,5710.15,0.0,No Claim
+2022,Insured 22,Motor,38377.31,59653.22,Pending
+2023,Insured 23,Home,40010.77,8724.32,Rejected
+2024,Insured 24,Motor,47543.7,0.0,No Claim
+2025,Insured 25,Life,25611.91,4866.03,Pending
+2026,Insured 26,Home,24182.31,0.0,No Claim
+2027,Insured 27,Home,8307.08,0.0,No Claim
+2028,Insured 28,Motor,7955.7,0.0,No Claim
+2029,Insured 29,Life,22140.7,23591.82,Rejected
+2030,Insured 30,Home,9463.03,68223.42,Rejected
+2031,Insured 31,Motor,24353.15,33105.09,Pending
+2032,Insured 32,Home,23719.53,0.0,No Claim
+2033,Insured 33,Home,19063.56,0.0,No Claim
+2034,Insured 34,Motor,35906.95,7297.98,Approved
+2035,Insured 35,Health,24434.44,29811.75,Approved
+2036,Insured 36,Health,31390.93,26371.68,Approved
+2037,Insured 37,Home,20911.91,60022.74,Rejected
+2038,Insured 38,Health,48577.94,28131.69,Rejected
+2039,Insured 39,Motor,11962.86,67781.99,Pending
+2040,Insured 40,Life,10169.84,0.0,No Claim
+2041,Insured 41,Motor,41324.96,77963.73,Rejected
+2042,Insured 42,Health,32404.77,55477.7,Approved
+2043,Insured 43,Motor,17297.17,73723.0,Pending
+2044,Insured 44,Health,13163.25,0.0,No Claim
+2045,Insured 45,Home,8131.34,77744.83,Approved
+2046,Insured 46,Motor,21928.75,12592.74,Pending
+2047,Insured 47,Life,39957.6,6796.56,Approved
+2048,Insured 48,Motor,12083.45,53917.5,Pending
+2049,Insured 49,Home,34787.24,35363.53,Pending
+2050,Insured 50,Motor,38972.44,0.0,No Claim
+2051,Insured 51,Home,9990.04,47450.74,Rejected
+2052,Insured 52,Life,7043.78,47946.0,Approved
+2053,Insured 53,Motor,18563.87,0.0,No Claim
+2054,Insured 54,Motor,39387.24,0.0,No Claim
+2055,Insured 55,Health,5347.85,14055.58,Pending
+2056,Insured 56,Motor,27511.81,64496.01,Approved
+2057,Insured 57,Home,43779.4,0.0,No Claim
+2058,Insured 58,Health,25688.94,0.0,No Claim
+2059,Insured 59,Life,30909.16,56759.92,Pending
+2060,Insured 60,Life,10182.8,0.0,No Claim
+2061,Insured 61,Life,12734.29,36807.75,Rejected
+2062,Insured 62,Life,8965.84,19465.32,Rejected
+2063,Insured 63,Home,28578.31,24821.96,Pending
+2064,Insured 64,Motor,19988.09,0.0,No Claim
+2065,Insured 65,Health,28877.22,0.0,No Claim
+2066,Insured 66,Life,20799.49,51635.44,Approved
+2067,Insured 67,Motor,9626.2,0.0,No Claim
+2068,Insured 68,Motor,32107.95,52440.72,Approved
+2069,Insured 69,Home,25877.89,46357.45,Rejected
+2070,Insured 70,Life,43891.11,12076.59,Approved
+2071,Insured 71,Home,24899.36,21973.89,Approved
+2072,Insured 72,Life,27830.16,36153.11,Approved
+2073,Insured 73,Life,42426.35,0.0,No Claim
+2074,Insured 74,Health,32675.38,37016.93,Rejected
+2075,Insured 75,Health,25238.02,52147.0,Pending
+2076,Insured 76,Home,27561.53,36041.85,Pending
+2077,Insured 77,Health,27704.71,0.0,No Claim
+2078,Insured 78,Motor,36842.98,41925.48,Rejected
+2079,Insured 79,Motor,21375.41,30993.32,Pending
+2080,Insured 80,Health,40515.21,5272.95,Approved
+2081,Insured 81,Home,17786.61,52525.13,Rejected
+2082,Insured 82,Motor,20001.29,11314.27,Pending
+2083,Insured 83,Life,48546.34,31356.64,Rejected
+2084,Insured 84,Health,18931.18,63332.96,Approved
+2085,Insured 85,Health,34071.12,28946.25,Pending
+2086,Insured 86,Life,13111.83,0.0,No Claim
+2087,Insured 87,Home,13640.24,12395.61,Pending
+2088,Insured 88,Health,27846.04,59091.52,Rejected
+2089,Insured 89,Health,34786.82,49442.52,Rejected
+2090,Insured 90,Home,11941.37,0.0,No Claim
+2091,Insured 91,Motor,37453.23,0.0,No Claim
+2092,Insured 92,Life,35436.33,0.0,No Claim
+2093,Insured 93,Home,32476.79,62704.03,Approved
+2094,Insured 94,Motor,18926.06,37521.25,Approved
+2095,Insured 95,Life,35523.81,35247.79,Pending
+2096,Insured 96,Home,27630.8,12964.65,Approved
+2097,Insured 97,Motor,44285.09,0.0,No Claim
+2098,Insured 98,Home,44335.26,8207.18,Rejected
+2099,Insured 99,Health,17827.84,21823.3,Rejected
+2100,Insured 100,Motor,42397.1,0.0,No Claim
+2101,Insured 101,Motor,41751.65,74437.75,Pending
+2102,Insured 102,Health,22840.43,30893.29,Approved
+2103,Insured 103,Life,15104.24,7926.65,Rejected
+2104,Insured 104,Life,40612.13,0.0,No Claim
+2105,Insured 105,Life,46282.83,66488.84,Rejected
+2106,Insured 106,Home,25187.07,0.0,No Claim
+2107,Insured 107,Health,5855.17,0.0,No Claim
+2108,Insured 108,Motor,29696.19,42221.72,Approved
+2109,Insured 109,Life,15693.81,0.0,No Claim
+2110,Insured 110,Motor,23892.15,36569.09,Approved
+2111,Insured 111,Home,31853.26,0.0,No Claim
+2112,Insured 112,Motor,37334.49,0.0,No Claim
+2113,Insured 113,Health,32666.43,0.0,No Claim
+2114,Insured 114,Home,13429.13,41878.76,Pending
+2115,Insured 115,Health,47903.17,62912.99,Rejected
+2116,Insured 116,Health,22570.42,50853.66,Pending
+2117,Insured 117,Life,38629.25,5404.76,Approved
+2118,Insured 118,Health,39717.56,26601.49,Approved
+2119,Insured 119,Life,29570.62,14007.13,Rejected
+2120,Insured 120,Home,49136.86,14582.24,Approved

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "p_gender",
+  "position": {
+    "x": 440,
+    "y": 420,
+    "z": 8,
+    "height": 270,
+    "width": 400,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "pieChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hospital"
+                    }
+                  },
+                  "Property": "Gender"
+                }
+              },
+              "queryRef": "Hospital.Gender",
+              "nativeQueryRef": "Gender"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hospital"
+                    }
+                  },
+                  "Property": "Total Patients"
+                }
+              },
+              "queryRef": "Hospital.Total Patients",
+              "nativeQueryRef": "Total Patients"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+table Hospital
+	lineageTag: 7ddb9333-e277-49a5-9345-a5bb35a753e7
+
+	column PatientID
+		dataType: int64
+		lineageTag: d6f5606a-deb9-4629-a01d-1fa50ea582a5
+		summarizeBy: none
+		sourceColumn: PatientID
+
+	column PatientName
+		dataType: string
+		lineageTag: 9f5e68a2-66ae-4a46-a30a-86a063f4bfd1
+		summarizeBy: none
+		sourceColumn: PatientName
+
+	column Gender
+		dataType: string
+		lineageTag: 357d256b-c1ea-435e-8ed4-7ebd96a14995
+		summarizeBy: none
+		sourceColumn: Gender
+
+	column Department
+		dataType: string
+		lineageTag: f4f8da97-eb4a-49c7-833f-a0ab89913e65
+		summarizeBy: none
+		sourceColumn: Department
+
+	column DoctorName
+		dataType: string
+		lineageTag: 9cf8921c-ed77-41d6-939e-30b775e66298
+		summarizeBy: none
+		sourceColumn: DoctorName
+
+	column Status
+		dataType: string
+		lineageTag: 8f3ef596-900a-4bcd-a614-52734c51d877
+		summarizeBy: none
+		sourceColumn: Status
+
+	column BillAmount
+		dataType: double
+		lineageTag: 3eef08cb-01e0-47e1-af69-53f7565b03bb
+		summarizeBy: sum
+		sourceColumn: BillAmount
+
+	measure 'Total Billing' = SUM(Hospital[BillAmount])
+		lineageTag: 24c9dfc2-9968-47df-a47d-dc0d4e4bb6bb
+
+	measure 'Avg Billing' = AVERAGE(Hospital[BillAmount])
+		lineageTag: ad2f6b6a-f4a0-40e7-b59f-5df6a9948b57
+
+	measure 'Total Patients' = COUNTROWS(Hospital)
+		lineageTag: 47b915cc-b4b1-48f0-b74d-369846cc0d28
+
+	measure 'Completed Appointments' = CALCULATE(COUNTROWS(Hospital), Hospital[Status] = "Completed")
+		lineageTag: 4e42a321-8195-4ab0-b84e-6f1850b903bd
+
+	partition Hospital = m
+		mode: import
+		source =
+				let
+					Source = Json.Document(Binary.Decompress(Binary.FromText("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", BinaryEncoding.Base64), Compression.Deflate)),
+					Table = Table.FromRows(Source, {"PatientID", "PatientName", "Gender", "Department", "DoctorName", "Status", "BillAmount"}),
+					Typed = Table.TransformColumnTypes(Table, {{"PatientID", Int64.Type}, {"PatientName", type text}, {"Gender", type text}, {"Department", type text}, {"DoctorName", type text}, {"Status", type text}, {"BillAmount", type number}}, "en-US")
+				in
+					Typed
+
+	annotation PBI_ResultType = Table

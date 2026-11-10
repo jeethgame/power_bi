@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "b_dept",
+  "position": {
+    "x": 20,
+    "y": 140,
+    "z": 5,
+    "height": 260,
+    "width": 600,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hospital"
+                    }
+                  },
+                  "Property": "Department"
+                }
+              },
+              "queryRef": "Hospital.Department",
+              "nativeQueryRef": "Department"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hospital"
+                    }
+                  },
+                  "Property": "Total Billing"
+                }
+              },
+              "queryRef": "Hospital.Total Billing",
+              "nativeQueryRef": "Total Billing"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

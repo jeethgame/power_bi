@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "s_course",
+  "position": {
+    "x": 920,
+    "y": 20,
+    "z": 4,
+    "height": 100,
+    "width": 340,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "University"
+                    }
+                  },
+                  "Property": "CourseName"
+                }
+              },
+              "queryRef": "University.CourseName",
+              "nativeQueryRef": "CourseName"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

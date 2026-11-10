@@ -1,0 +1,68 @@
+table Banking
+	lineageTag: 99487bd3-716d-40b3-abcf-31681db5e964
+
+	column AccountID
+		dataType: int64
+		lineageTag: 2a736d0b-0e8f-4ca0-b9a5-792220e42e20
+		summarizeBy: none
+		sourceColumn: AccountID
+
+	column CustomerName
+		dataType: string
+		lineageTag: 855e4bfd-abe9-4a91-b278-21d9ab6bce1e
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+	column BranchName
+		dataType: string
+		lineageTag: c284c3e0-8861-41bf-b67b-a3652d199434
+		summarizeBy: none
+		sourceColumn: BranchName
+
+	column Region
+		dataType: string
+		lineageTag: 8a867cdf-28e8-429b-98ea-0758bfaf36f9
+		summarizeBy: none
+		sourceColumn: Region
+
+	column AccountType
+		dataType: string
+		lineageTag: 4e15ceea-2b9e-40a7-a810-364bd4ec7249
+		summarizeBy: none
+		sourceColumn: AccountType
+
+	column Status
+		dataType: string
+		lineageTag: 737cb664-b23a-4e60-a551-ec3546657f32
+		summarizeBy: none
+		sourceColumn: Status
+
+	column Balance
+		dataType: double
+		lineageTag: 356418a8-4e8e-41e1-803f-f9e9afc51abd
+		summarizeBy: sum
+		sourceColumn: Balance
+
+	measure 'Total Balance' = SUM(Banking[Balance])
+		lineageTag: 978cc1f7-d9d7-4315-a6c2-8dbc1d8e325f
+
+	measure 'Avg Balance' = AVERAGE(Banking[Balance])
+		lineageTag: c31b436d-d164-4d3e-8c77-2cd5040530b2
+
+	measure 'Total Accounts' = COUNTROWS(Banking)
+		lineageTag: e2955bbd-7682-4851-a25c-50856ed45055
+
+	measure 'High Balance Accounts' = CALCULATE(COUNTROWS(Banking), Banking[Balance] >= 100000)
+		lineageTag: 9dd08839-9fe6-4943-bea6-3ace1f566f89
+
+	partition Banking = m
+		mode: import
+		source =
+				let
+					Source = Json.Document(Binary.Decompress(Binary.FromText("pZpNbxs3EIb/ipBzQXA4X+SxTdBbckmAHoIc1FRIDDh2ITtB++87q5CrHXnF3VVvkiEMSM48886HP36EGOGX3avX35+eH78djjt4Zd/eHO6/3u1eHx6ej/v74Q/vHo/PX1+dfnc82p9PP3o8ftufPgoSYWD49MtusJem9tLw09/2D1/294/Hw+7D4fPJzvvH7z8Nvt//uHv48jR8/PXz892Pg30CQtAUmKtBnBrE4advv3/7c3+3G638cXg6nen3u38Of+3eHP5+fLp79jZLyiWGiNUmTW1S/9KzZyzMXEJsl+apPT799OFhv3u3/7I/LhsjUdWgUo3J1JgsHe5+f/zXm4sJcgxI1ZxOzenJjV8Pdrq73dv93YNzx8S/o7lUinDIqVrLU2v5BvemaEfiIFoNlqnB0n26l1cVjRYqWt0K0cVy7D/di2g5h3SOpQTN1aonBHoROOtegAQYUjukAwSWCWm3Ph8PNCeLZqk+AUcInBD5MPOAnQsDcy45cDuj4wOof+UXbklRMVIo7QEdHdDDYzYAY+ZUQkUNHB0gqwJmkqxISQJXNsCxAbqWtUmkKIEGqMEMjg7IG28KiYjKOZwdGtBj43rmU2SQgNVkcoSkBUJmoxmBFYNU3yYHR4K16WUSehkIckilGvT6kW4QJDCfGL+jRYdH6irIbMJSNTRidXFyaKQuGnM+zqaQMVB7PodG4hvVLZZEOVBzskMkrUPkHDCASoFrbkmOkKTXcstsqGRQoCBV15KDI+XtocIm4zrCmxwe6TY8EnFK3JILOjwwbuS3IIFJZb0vOjRwNRpnT6QUJaQaKujAwAUwOsGinEVDaqf05RWulqPRIJoAYSiVD3R84EJt1ZOkoVBIIdUyEB0puFlEzDOW+EsNa3SIoKzMCefTmWeGrNXyKjpMULfmGCsBUWOA5muHCuZr1M3LJarJZW4h7SjBsp06pCFjSb0pOURoQUHm83PhSDT6ghwntFBfvZRg1cwwJixymFDqJr8ZRzChFfZco5kcHXS1tJpzhJSMFiHVkO84aIshMmIpYLugA4F4RUaePH3kmGUMDnIYUF8pXj6WWH6HsRQgxwDp9kySEqE1VTW/k4OANhdTscDQotX8QY4DKgunmyUrKUsM9brsQODYBWvu9YjF4jY2c44CXmjEe3kTEhdrn2v1w44HXmo3erohhBS0vic7Mhj7553r3cCEN45ZgB0g3K2rOoe0TiFa8qshxL4v580SnCiKWHHaDul4Ybn9MUmGHr0NTdihwwvyMcNNIdSQa65hBw7nta6ZxJBY3KSxRmDHDvc1ZOZ8JQ6epmpNHDjSK7Jmy3FgMPWQ+nTiuJHt6sFizTm2szlaZKHImu/2DZMUsGIiDhPBzmU7TKNpcAxakRaHiqwfX00dLJDkbNFxIt02ZO7SHAtr0EqJ+AHWDRMszqeivFIsjg652oN0cMPCnEfZEweI5I24Ial16djezsEhtwhLhqGCbvMmdXzoYo/+Mh1oRhkLZ3WA6PbxlaBke7taEakjRNONeToVGaYI1cPqKNGFFv3lhYkHqS81/6njQze36CUXzWMJqI4N7WtIT5ctR0cOVGNQHSTaK7063aslU9PkNghUP+pdqsA6h03DLMtKu2rX8aJX25E5lFEKm5I0RztYdOu4F2SYurc5R3ag5HjtWLPVIVnOMk2qL5cdJHktJJM5YCqMoVlzjOT1I95zCBbO5wlWdnjkzRMs62jwvBDIDo9MK9V8EhyFrMHEykd2fOTtNdZQ+5mgt/VHdmBkWXm8yWpGyFJLO51DIuvGgBNKVk62QXb2y4/l7cfM22G2OnoMFIdDLquVfCKVklTHZFUcEiVuzQCTlFqM3LGMKY6Psl1ECgwbi/GYDpDSFZHZkFGOFtFtNFYcHwW3pWi3mWIrO9qdHSeFbsrQMHR2eayki4Ol8GZtB0KxfIrt5g6WIitS4CQWrZ/TsU4ojpSysAuZX19ISXmcbRdHS1mhGtP6FFKWcehU/JKwLxtz07rECceeGOLFnnDrnDehPXxb+sDFBj3+j9ZdgHFMN+BX6fb1ZppNOEuyFNtO7BeG8epYa67WAmuJNUB7Sr8pjFcHW7OxzJAgRKmm/Jow8tbrTsdcqFyTLPh9un1dFz2XyNWGE/w+3b5uZtgkJRK3ZSv4lbp9vfaE1/3LWdgCsp3Q7w3jgqz0Rj7D/KiVIXCxXocldZnt3pPgsC2oR73crcNGfUZQCtiMeV4WV+uzaKtVb22kCRebdei17zPHoxwR2r9OwMVSHbauRia35jh0szV+LtbrcHUi3Kv3Uy4EoTRPe2S6W/ae1ZiidaJ1NQQX23bY/r8oYJ3ZkHzai3pyYH1BNt0LFWt0Yru4Rwc2j7oyQWy7YvDbdvi5br+hWZaSKYXCnz79Bw==", BinaryEncoding.Base64), Compression.Deflate)),
+					Table = Table.FromRows(Source, {"AccountID", "CustomerName", "BranchName", "Region", "AccountType", "Status", "Balance"}),
+					Typed = Table.TransformColumnTypes(Table, {{"AccountID", Int64.Type}, {"CustomerName", type text}, {"BranchName", type text}, {"Region", type text}, {"AccountType", type text}, {"Status", type text}, {"Balance", type number}}, "en-US")
+				in
+					Typed
+
+	annotation PBI_ResultType = Table
